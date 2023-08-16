@@ -1,7 +1,7 @@
 version: '3'
 services:
   web1:
-    image: joham110355/artique:latest
+    image: johan110355/artique:latest
     container_name: api-server
     ports:
       - "80:8080"
