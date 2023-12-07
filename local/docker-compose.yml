@@ -1,0 +1,13 @@
+version: '3'
+services:
+  web1:
+    image: artique:latest
+    container_name: api-server
+    ports:
+      - "8080:8080"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
